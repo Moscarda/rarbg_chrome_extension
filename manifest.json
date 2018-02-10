@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Fix RARBG.TO",
+  "version": "0.0.1",
+  "description": "Fix evil ad overlay on rarbg.to",
+
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://rarbg.to/*"],
+    "run_at": "document_idle"
+  }]
+
+}
